@@ -1,0 +1,39 @@
+---
+output:
+  html_document:
+    theme: spacelab
+---
+
+Biostatistics - Kandahar 2016
+=============================
+
+Instructor:
+
+* [Leonardo Collado-Torres](http://lcolladotor.github.io/about.html)
+
+Restricted access files:
+
+* [Courseplus](http://courseplus.jhu.edu): here you can find the non-public data and slides from [John McGready](https://www.jhsph.edu/faculty/directory/profile/801/john-mcgready).
+
+
+# Materials
+
+| Day | Date  |  Session  | Resources  |  Description |
+| --- |--------| -----------|-------------|------------------------------------------|
+| Monday  | 2016-12-26  | Biostatistics Introduction  | [Slides](sessions/introduction-biostats/introduction-biostats.html), [PDF notes](sessions/introduction-biostats/introduction-biostats.pdf), [Source file](sessions/introduction-biostats/introduction-biostats.R)  | Motivational introduction to Biostatistics |
+| Monday  | 2016-12-26  | Stata Introduction  | [Slides](sessions/introduction-stata/introduction-stata.html), [PDF notes](sessions/introduction-stata/introduction-stata.pdf), [Source file](sessions/introduction-stata/introduction-stata.R)  | Stata overview |
+
+# Public data sets
+
+
+| Name | Description | Cleaning and tidying code |
+| ---- | ----------- | ------------------------- |
+| [arg_worldbank.dta](data/arg_worldbank.dta) | Data on Afghanistan from the Worldbank | [Cleaning report](data/worldbank.html) [Cleaning source](data/worldbank.Rmd) |
+
+
+```{r, eval = FALSE, echo = FALSE}
+## Render this file:
+rmarkdown::render('index.Rmd')
+```
+
+This page was last updated at `r Sys.time()`.

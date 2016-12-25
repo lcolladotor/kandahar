@@ -45,10 +45,10 @@ head(afg_fix)
 ```{r}
 ## Export
 library('rio')
-export(afg_fix, 'arg_worldbank_2016.Rdata')
+export(afg_fix, 'afg_worldbank_2016.Rdata')
 
 library('foreign')
-write.dta(afg_fix, 'arg_worldbank_2016.dta')
+write.dta(afg_fix, 'afg_worldbank_2016.dta')
 ```
 
 # Stata
@@ -61,11 +61,11 @@ statapath <- '/Applications/Stata/Stata.app/Contents/MacOS/Stata'
 Here are some Stata commands for exploring this data a bit:
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', results = 'hide'}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 ```
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2, results = 'hide'}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 twoway scatter AGLNDAGRIK2 TXVALMRCHWRZS
 graph export "scatter1.png", replace
 ```
@@ -74,7 +74,7 @@ graph export "scatter1.png", replace
 
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2, results = 'hide'}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 graph box AGLNDAGRIK2
 graph export "box1.png", replace
 ```
@@ -82,7 +82,7 @@ graph export "box1.png", replace
 ![box1](box1.png)
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2, results = 'hide'}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 dotplot AGLNDAGRIK2
 graph export "dot1.png", replace
 ```
@@ -91,7 +91,7 @@ graph export "dot1.png", replace
 
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2, results = 'hide'}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 graph box TXVALMRCHWRZS
 graph export "box2.png", replace
 ```
@@ -99,7 +99,7 @@ graph export "box2.png", replace
 ![box2](box2.png)
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2, results = 'hide'}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 dotplot TXVALMRCHWRZS
 graph export "dot2.png", replace
 ```
@@ -107,7 +107,7 @@ graph export "dot2.png", replace
 ![dot2](dot2.png)
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2, results = 'hide'}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 twoway scatter AGLNDAGRIK2 Year
 graph export "scatter2.png", replace
 ```

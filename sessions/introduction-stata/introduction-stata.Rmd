@@ -170,7 +170,7 @@ It's AGLNDAGRIK2
 ##
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=1:2, results = 'hide'}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 graph box AGLNDAGRIK2
 graph export "box1.png", replace
 ```
@@ -241,7 +241,7 @@ Improve the plot you made earlier as if you were to show the distribution of the
 ##
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2:3, results = 'hide'}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 graph hbox AGLNDAGRIK2, title(Afghanistan agricultural land) /*
     */ subtitle(1961 to 2013) note(Worldbank 2016) scheme(sj)
 graph export "box1_pretty.png", replace
@@ -254,63 +254,63 @@ include_graphics("box1_pretty.png")
 ## See all the entries for a variable: list {.smaller}
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 list AGLNDAGRIK2
 ```
 
 ## codebook: main information {.smaller}
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 codebook AGLNDAGRIK2
 ```
 
 ## summarize: univariate statistical summary
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 summarize AGLNDAGRIK2
 ```
 
 ## {.smaller}
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 summarize AGLNDAGRIK2, detail
 ```
 
 ## describe: similar to `codebook`
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 describe AGLNDAGRIK2
 ```
 
 ## tabulate: make a table{.smaller}
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 tabulate AGLNDAGRIK2
 ```
 
 ## tabulate: include missing observations {.smaller}
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 tabulate AGLNDAGRIK2, missing
 ```
 
 ## count number of observations
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 count if AGLNDAGRIK2 == .
 ```
 
 ## generate: create a new variable
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=2}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 generate agrilog = log10(AGLNDAGRIK2)
 summarize agrilog
 ```
@@ -318,7 +318,7 @@ summarize agrilog
 ## drop: delete variables
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=3}
-use arg_worldbank_2016.dta, clear
+use afg_worldbank_2016.dta, clear
 generate agrilog = log10(AGLNDAGRIK2)
 drop agrilog
 ```
@@ -334,7 +334,7 @@ Tip: remember that in math the modulus 2 is 0 for even values and 1 for odd valu
 ## {.smaller}
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo = FALSE}
-use arg_worldbank_2016.dta
+use afg_worldbank_2016.dta
 generate modulus = mod(Year, 2)
 label define moduluslabel 0 "Even" 1 "Odd"
 label values modulus moduluslabel

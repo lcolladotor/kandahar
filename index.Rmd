@@ -17,9 +17,7 @@ Biostatistics - Kandahar 2016
 
 Instructor:
 
-* [Leonardo Collado-Torres](http://lcolladotor.github.io/about.html)
-
-<a href="http://libd.org/"><img alt = "LIBD" align="left" src="http://aejaffe.com/media/LIBD_logo.jpg" width=100/></a>
+* [Leonardo Collado-Torres](http://lcolladotor.github.io/about.html) <a href="http://libd.org/"><img alt = "LIBD" align="right" src="http://aejaffe.com/media/LIBD_logo.jpg" width=130/></a>
 
 </br>
 </br>
@@ -34,15 +32,15 @@ Restricted access files:
 
 | Day | Date  |  Session  | Resources  |  Description |
 | --- |--------| -----------|-------------|------------------------------------------|
-| Monday  | 2016-12-26  | Biostatistics Introduction  | [Slides](sessions/introduction-biostats/introduction-biostats.html), [PDF notes](sessions/introduction-biostats/introduction-biostats.pdf), [Source file](sessions/introduction-biostats/introduction-biostats.R)  | Motivational introduction to Biostatistics |
-| Monday  | 2016-12-26  | Stata Introduction  | [Slides](sessions/introduction-stata/introduction-stata.html), [PDF notes](sessions/introduction-stata/introduction-stata.pdf), [Source file](sessions/introduction-stata/introduction-stata.R)  | Stata overview |
+| Monday  | 2016-12-26  | Biostatistics Introduction  | [Slides](sessions/introduction-biostats/introduction-biostats.html), [PDF notes](sessions/introduction-biostats/introduction-biostats.pdf), [Source file](sessions/introduction-biostats/introduction-biostats.Rmd)  | Motivational introduction to Biostatistics |
+| Monday  | 2016-12-26  | Stata Introduction  | [Slides](sessions/introduction-stata/introduction-stata.html), [PDF notes](sessions/introduction-stata/introduction-stata.pdf), [Source file](sessions/introduction-stata/introduction-stata.Rmd)  | Stata overview |
 
 # Public data sets
 
 
 | Name | Description | Cleaning and tidying code |
-| ---- | ----------- | ------------------------- |
-| [arg_worldbank.dta](data/arg_worldbank.dta) | Data on Afghanistan from the Worldbank | [Cleaning report](data/worldbank.html) [Cleaning source](data/worldbank.Rmd) |
+| ---- | ------------------------------- | ------------------------- |
+| [afg_worldbank_2016.dta](data/afg_worldbank_2016.dta) | Data on Afghanistan from the Worldbank | [Cleaning report](data/worldbank.html) [Cleaning source](data/worldbank.Rmd) |
 
 
 ```{r, eval = FALSE, echo = FALSE}

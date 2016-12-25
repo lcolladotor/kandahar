@@ -123,7 +123,7 @@ include_graphics("ubc-stat545-2014-cm005-r-graphics-landscape-use-ggplot2-14-638
 ## You'll learn Stata
 
 ```{r, engine = 'stata', engine.path = statapath, comment='', echo=1:4, results = 'hide'}
-use arg_worldbank_2016.dta
+use afg_worldbank_2016.dta
 twoway (scatter SPRURTOTLZG Year), /*
     */ title(Rural population growth over time) /*
     */ subtitle(Afghanisthan)

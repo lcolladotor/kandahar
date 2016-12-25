@@ -50,4 +50,6 @@ Restricted access files:
 rmarkdown::render('index.Rmd')
 ```
 
+Did you find a bug or typo? Please report it [here](https://github.com/lcolladotor/kandahar/issues). Thank you!
+
 This page was last updated at `r Sys.time()`.

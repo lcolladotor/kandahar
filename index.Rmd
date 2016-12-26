@@ -41,6 +41,7 @@ Restricted access files:
 | Name | Description | Cleaning and tidying code |
 | ---- | ------------------------------- | ------------------------- |
 | [afg_worldbank_2016.dta](data/afg_worldbank_2016.dta) | Data on Afghanistan from the Worldbank | [Cleaning report](data/worldbank.html), [Source file](data/worldbank.Rmd) |
+| [obs50.dta](data/obs50.dta) | 50 SBP observations | Manually added to Stata based on Statistical Reasoning class 2 slides. |
 
 
 ```{r, eval = FALSE, echo = FALSE}

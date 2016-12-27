@@ -42,6 +42,7 @@ Restricted access files:
 | ---- | ------------------------------- | ------------------------- |
 | [afg_worldbank_2016.dta](data/afg_worldbank_2016.dta) [afg_worldbank_2016.xlsx](data/afg_worldbank_2016.xlsx) | Data on Afghanistan from the Worldbank | [Cleaning report](data/worldbank.html), [Source file](data/worldbank.Rmd) |
 | [obs50.dta](data/obs50.dta) | 50 SBP observations | Manually added to Stata based on Statistical Reasoning class 2 slides. |
+| [normal_2016.dta](data/normal_2016.dta) | Random data from the normal distribution | [Data generating report](data/random_normal.html), [Source file](data/random_normal.Rmd) |
 
 
 ```{r, eval = FALSE, echo = FALSE}

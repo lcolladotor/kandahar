@@ -1,0 +1,61 @@
+---
+title: "Data from the Normal distribution"
+author: "L Collado-Torres"
+date: "`r doc_date()`"
+output: 
+  BiocStyle::html_document
+---
+
+
+With this R code I will generate sets of random numbers from the Normal distribution. I will do it for 4 sample sizes and 3 different variances. For each combination of sample size and variance I generated 15 groups of observations.
+
+# Data
+
+
+```{r}
+## Set some sample sizes and variances
+sizes <- c(5, 15, 25, 100)
+variances <- c(1, 5, 10)
+params <- expand.grid(size = sizes, variance = variances)
+
+## Generate the data
+set.seed(20161227)
+normal <- mapply(function(size, variance) {
+    values <- unlist(lapply(1:15, rnorm, n = size, sd = sqrt(variance)))
+    data.frame(value = values, size = size, variance = variance, group = rep(1:15, each = size))
+}, params$size, params$variance, SIMPLIFY = FALSE)
+normal <- do.call(rbind, normal)
+
+## Explore the data
+head(normal)
+
+
+## Attach variable labels
+attr(normal, 'var.labels') <- c('Observed value',
+    'Number of observations for the group',
+    'Variance of the normal distribution for the group',
+    'The sample group for a given size and variance')
+
+## Export to Stata
+library('foreign')
+write.dta(normal, 'normal_2016.dta')
+```
+
+# Reproducibility
+
+
+Date this document was generated.
+
+```{r reproduce_date, echo=FALSE}
+## Date the vignette was generated
+Sys.time()
+```
+
+`R` session information.
+
+```{r reproduce_info, echo=FALSE}
+## Session info
+library('devtools')
+options(width = 120)
+session_info()
+```

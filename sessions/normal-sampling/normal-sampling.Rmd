@@ -241,7 +241,22 @@ histogram mean, by(size)
 graph export "hist3.png", replace
 graph box mean, by(size)
 graph export "box3.png", replace
+
+* Optional qnorm plots
+qnorm mean if size == 5
+graph export "qnorm_mean_size5.png", replace
+qnorm mean if size == 15
+graph export "qnorm_mean_size15.png", replace
+qnorm mean if size == 25
+graph export "qnorm_mean_size25.png", replace
+qnorm mean if size == 100
+graph export "qnorm_mean_size100.png", replace
 ```
 
 ![hist3](hist3.png)
 ![box3](box3.png)
+
+![qnorm-size5](qnorm_mean_size5.png)
+![qnorm-size15](qnorm_mean_size15.png)
+![qnorm-size25](qnorm_mean_size25.png)
+![qnorm-size100](qnorm_mean_size100.png)

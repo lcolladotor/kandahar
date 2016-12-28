@@ -73,20 +73,22 @@ params &lt;- expand.grid(size = sizes, variance = variances)
 ## Generate the data
 set.seed(20161227)
 normal &lt;- mapply(function(size, variance) {
-    values &lt;- unlist(lapply(1:15, rnorm, n = size, sd = sqrt(variance)))
-    data.frame(value = values, size = size, variance = variance, group = rep(1:15, each = size))
+    values &lt;- unlist(lapply(1:15, function(x) {
+        rnorm(n = size, sd = sqrt(variance))
+    }))
+    data.frame(observation = values, size = size, variance = variance, group = rep(1:15, each = size))
 }, params$size, params$variance, SIMPLIFY = FALSE)
 normal &lt;- do.call(rbind, normal)
 
 ## Explore the data
 head(normal)</code></pre>
-<pre><code>##       value size variance group
-## 1 1.6425660    5        1     1
-## 2 0.7442075    5        1     1
-## 3 1.0156288    5        1     1
-## 4 1.7679664    5        1     1
-## 5 0.5680197    5        1     1
-## 6 3.0096572    5        1     2</code></pre>
+<pre><code>##   observation size variance group
+## 1  0.64256603    5        1     1
+## 2 -0.25579248    5        1     1
+## 3  0.01562885    5        1     1
+## 4  0.76796644    5        1     1
+## 5 -0.43198031    5        1     1
+## 6  1.00965719    5        1     2</code></pre>
 <pre class="r"><code>## Attach variable labels
 attr(normal, 'var.labels') &lt;- c('Observed value',
     'Number of observations for the group',
@@ -100,7 +102,7 @@ write.dta(normal, 'normal_2016.dta')</code></pre>
 <div id="reproducibility" class="section level1">
 <h1><span class="header-section-number">2</span> Reproducibility</h1>
 <p>Date this document was generated.</p>
-<pre><code>## [1] &quot;2016-12-27 16:08:19 GST&quot;</code></pre>
+<pre><code>## [1] &quot;2016-12-27 16:39:37 GST&quot;</code></pre>
 <p><code>R</code> session information.</p>
 <pre><code>## Session info -----------------------------------------------------------------------------------------------------------</code></pre>
 <pre><code>##  setting  value                                             

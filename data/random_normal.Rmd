@@ -21,8 +21,10 @@ params <- expand.grid(size = sizes, variance = variances)
 ## Generate the data
 set.seed(20161227)
 normal <- mapply(function(size, variance) {
-    values <- unlist(lapply(1:15, rnorm, n = size, sd = sqrt(variance)))
-    data.frame(value = values, size = size, variance = variance, group = rep(1:15, each = size))
+    values <- unlist(lapply(1:15, function(x) {
+        rnorm(n = size, sd = sqrt(variance))
+    }))
+    data.frame(observation = values, size = size, variance = variance, group = rep(1:15, each = size))
 }, params$size, params$variance, SIMPLIFY = FALSE)
 normal <- do.call(rbind, normal)
 

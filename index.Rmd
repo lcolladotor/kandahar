@@ -34,7 +34,7 @@ Restricted access files:
 | --- |-----------| -----------|-----------------------|------------------------------------------|
 | Monday  | 2016-12-26  | Biostatistics Introduction  | [Slides](sessions/introduction-biostats/introduction-biostats.html), [PDF notes](sessions/introduction-biostats/introduction-biostats.pdf), [Source file](sessions/introduction-biostats/introduction-biostats.Rmd)  | Motivational introduction to Biostatistics |
 | Monday  | 2016-12-26  | Stata Introduction  | [Slides](sessions/introduction-stata/introduction-stata.html), [PDF notes](sessions/introduction-stata/introduction-stata.pdf), [Source file](sessions/introduction-stata/introduction-stata.Rmd)  | Stata overview |
-| Wednesday  | 2016-12-28  | Stata Introduction  | [HTML version](sessions/normal-sampling/normal-sampling.html), [PDF notes](sessions/normal-sampling/normal-sampling.pdf), [Source file](sessions/normal-sampling/normal-sampling.Rmd)  | Learn about the Normal distribution, the Sampling distribution and the Central Limit Theorem by exploring data |
+| Wednesday  | 2016-12-28  | Normal, Sampling and CLT  | [HTML version](sessions/normal-sampling/normal-sampling.html), [PDF notes](sessions/normal-sampling/normal-sampling.pdf), [Source file](sessions/normal-sampling/normal-sampling.Rmd)  | Learn about the Normal distribution, the Sampling distribution and the Central Limit Theorem by exploring data |
 
 # Public data sets
 

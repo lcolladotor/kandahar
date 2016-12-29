@@ -165,3 +165,8 @@ Divide in two teams and come up with a 2 minute overview of Biostatistics. Imagi
 <iframe width="853" height="480" src="https://www.youtube.com/embed/nnQTT39ADPo" frameborder="0" allowfullscreen></iframe>
 
 [Source](https://www.youtube.com/embed/nnQTT39ADPo)
+
+## Slides license
+
+[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+

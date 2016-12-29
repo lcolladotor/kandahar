@@ -7,6 +7,8 @@ output:
 Biostatistics - Kandahar 2016
 =============================
 
+[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 <a href="http://www.jhsph.edu/"><img alt = "JHSPH" align="right" src="http://www.aejaffe.com/media/jhu-bloomberg-logo.jpg" width=295 height=172/></a>
 
 </br>
@@ -35,6 +37,7 @@ Restricted access files:
 | Monday  | 2016-12-26  | Biostatistics Introduction  | [Slides](sessions/introduction-biostats/introduction-biostats.html), [PDF notes](sessions/introduction-biostats/introduction-biostats.pdf), [Source file](sessions/introduction-biostats/introduction-biostats.Rmd)  | Motivational introduction to Biostatistics |
 | Monday  | 2016-12-26  | Stata Introduction  | [Slides](sessions/introduction-stata/introduction-stata.html), [PDF notes](sessions/introduction-stata/introduction-stata.pdf), [Source file](sessions/introduction-stata/introduction-stata.Rmd)  | Stata overview |
 | Wednesday  | 2016-12-28  | Normal, Sampling and CLT  | [HTML version](sessions/normal-sampling/normal-sampling.html), [PDF notes](sessions/normal-sampling/normal-sampling.pdf), [Source file](sessions/normal-sampling/normal-sampling.Rmd)  | Learn about the Normal distribution, the Sampling distribution and the Central Limit Theorem by exploring data |
+| Friday  | 2016-12-30  | Advanced Stata topics  | [HTML version](sessions/advanced-stata/advanced-stata.html), [PDF notes](sessions/advanced-stata/advanced-stata.pdf), [Source file](sessions/advanced-stata/advanced-stata.Rmd)  | Links to pages that describe some advanced Stata topics |
 
 # Public data sets
 
@@ -53,4 +56,8 @@ rmarkdown::render('index.Rmd')
 
 Did you find a bug or typo? Please report it [here](https://github.com/lcolladotor/kandahar/issues). Thank you!
 
+You can find all the public material (including pictures) at https://github.com/lcolladotor/kandahar. This public material is license under [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 This page was last updated at `r Sys.time()`.
+
+[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)

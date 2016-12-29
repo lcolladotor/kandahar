@@ -260,3 +260,5 @@ graph export "qnorm_mean_size100.png", replace
 ![qnorm-size15](qnorm_mean_size15.png)
 ![qnorm-size25](qnorm_mean_size25.png)
 ![qnorm-size100](qnorm_mean_size100.png)
+
+[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)

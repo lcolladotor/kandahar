@@ -1,0 +1,27 @@
+---
+title: "Advanced Stata topics"
+author: "L Collado-Torres"
+date: "`r doc_date()`"
+output: 
+  BiocStyle::html_document
+---
+
+
+* Merging data. Check this page from [UCLA describing merging](http://www.ats.ucla.edu/stat/stata/faq/multmerge.htm). You can also read more about it on the section _Combining Two or More Stata Files_ in the Hamilton book (version 12) on page 46.
+* Converting strings to numbers. That is done with the `destring` command and the [UCLA website describes this command](http://www.ats.ucla.edu/stat/stata/faq/destring.htm) in more detail. There is a short example with `destring` on page 39 of the Hamilton book.
+* Create date variables. A related task to working with strings is converting strings into _date_ variables that will be properly recognized by Stata. [This UCLA page](http://www.ats.ucla.edu/stat/stata/faq/string_dates.htm) shows how to do it.
+* Power and Sample size. Probably one of the most significant updates in Stata 14 is expanded tools for [power and sample size calculations](http://www.stata.com/features/power-and-sample-size/). This is mainly done via the `power` command. Stata also created a [set of tutorial videos on how to do these calculations](https://www.youtube.com/playlist?list=PLN5IskQdgXWmExGRjdy0s0VCdYnzGMZrT). Like I said, some scenarios are very complicated and need simulations for approximating power and sample size calculations. But this is a very good start. Finally, I haven't used [this website](http://powerandsamplesize.com/) but it seems useful.
+
+
+List of links (in case you are printing this page):
+
+* http://www.ats.ucla.edu/stat/stata/faq/multmerge.htm
+* http://www.ats.ucla.edu/stat/stata/faq/destring.htm
+* http://www.ats.ucla.edu/stat/stata/faq/string_dates.htm
+* http://www.stata.com/features/power-and-sample-size/
+* https://www.youtube.com/playlist?list=PLN5IskQdgXWmExGRjdy0s0VCdYnzGMZrT
+* http://powerandsamplesize.com/
+
+Remember that all the material can I made and is public is available at https://github.com/lcolladotor/kandahar. The restricted access material is available via http://courseplus.jhu.edu/.
+
+[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)

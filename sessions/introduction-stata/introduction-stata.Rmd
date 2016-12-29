@@ -365,3 +365,7 @@ ttest AGLNDAGRIK2, by(modulus)
 * A [recording](https://connect.johnshopkins.edu/p4byu038nuc/) of an introduction to Stata by Dr Marie Diener-West
 * [SPSS to Stata](http://www.ats.ucla.edu/stat/stata/faq/spss_command_to_stata.htm) table
 * [UCLA Stata Starter Kit](http://www.ats.ucla.edu/stat/stata/sk/default.htm)
+
+## Slides license
+
+[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
